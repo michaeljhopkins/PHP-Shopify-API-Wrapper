@@ -12,224 +12,218 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getCustomerSavedSearches() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "getCustomerSavedSearches" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches.json",
-            "summary" => "Get a list of all customer saved searches",
-            "responseModel" => "defaultJsonResponse",
+        'getCustomerSavedSearches' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches.json',
+            'summary' => 'Get a list of all customer saved searches',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
-        
-        /**
+
+        /*
          *    getCustomerSavedSearchesCount() method
          *
          *    reference: http://docs.shopify.com/customersavedsearch
          */
-        "getCustomerSavedSearchesCount" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/count.json",
-            "summary" => "Get a count of all customer saved searches",
-            "responseModel" => "defaultJsonResponse"
+        'getCustomerSavedSearchesCount' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/count.json',
+            'summary' => 'Get a count of all customer saved searches',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
 
-        /**
+        /*
          *    getCustomerSavedSearch() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "getCustomerSavedSearch" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/{id}.json",
-            "summary" => "Get a single customer saved search",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Saved Search.",
-                    "required" => true
-                )
-            )
+        'getCustomerSavedSearch' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/{id}.json',
+            'summary' => 'Get a single customer saved search',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the Saved Search.',
+                    'required' => true,
+                ),
+            ),
         ),
 
-        
-        /**
+        /*
          *    getCustomerSavedSearchCustomers() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "getCustomerSavedSearchCustomers" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/{id}/customers.json",
-            "summary" => "Get all customers who match the criteria for the specified customer saved search",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Saved Search.",
-                    "required" => true
-                )
-            )
+        'getCustomerSavedSearchCustomers' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/{id}/customers.json',
+            'summary' => 'Get all customers who match the criteria for the specified customer saved search',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the Saved Search.',
+                    'required' => true,
+                ),
+            ),
         ),
 
-
-        /**
+        /*
          *    createCustomerSavedSearch() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "createCustomerSavedSearch" => array(
-            "httpMethod" => "POST",
-            "uri" => "/admin/customer_saved_searches.json",
-            "summary" => "Create a new customer saved search.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "customer_saved_search" => array(
-                    "location" => "json",
-                    "parameters" => array(
-                        "name" => array(
-                            "type" => "string",
-                            "location" => "json",
+        'createCustomerSavedSearch' => array(
+            'httpMethod' => 'POST',
+            'uri' => '/admin/customer_saved_searches.json',
+            'summary' => 'Create a new customer saved search.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'customer_saved_search' => array(
+                    'location' => 'json',
+                    'parameters' => array(
+                        'name' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "query" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'query' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "body" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'body' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "accepts_marketing" => array(
-                            "type" => "boolean",
-                            "location" => "json",
+                        'accepts_marketing' => array(
+                            'type' => 'boolean',
+                            'location' => 'json',
                         ),
-                        "country" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'country' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "last_order_date" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'last_order_date' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "orders_count" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'orders_count' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "state" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'state' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "tag" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'tag' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "total_spent" => array(
-                            "type" => "string",
-                            "location" => "json",
-                        )
-                    )
-                )
-            )
+                        'total_spent' => array(
+                            'type' => 'string',
+                            'location' => 'json',
+                        ),
+                    ),
+                ),
+            ),
         ),
 
-
-        /**
+        /*
          *    updateCustomerSavedSearch() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "updateCustomerSavedSearch" => array(
-            "httpMethod" => "PUT",
-            "uri" => "/admin/customer_saved_searches/{id}.json",
-            "summary" => "Update a customer saved search.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "required" => true
+        'updateCustomerSavedSearch' => array(
+            'httpMethod' => 'PUT',
+            'uri' => '/admin/customer_saved_searches/{id}.json',
+            'summary' => 'Update a customer saved search.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'required' => true,
                 ),
-                "customer_saved_search" => array(
-                    "location" => "json",
-                    "parameters" => array(
-                        "id" => array(
-                            "type" => "number",
-                            "location" => "json",
+                'customer_saved_search' => array(
+                    'location' => 'json',
+                    'parameters' => array(
+                        'id' => array(
+                            'type' => 'number',
+                            'location' => 'json',
                         ),
-                        "name" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'name' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "query" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'query' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "body" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'body' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "accepts_marketing" => array(
-                            "type" => "boolean",
-                            "location" => "json",
+                        'accepts_marketing' => array(
+                            'type' => 'boolean',
+                            'location' => 'json',
                         ),
-                        "country" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'country' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "last_order_date" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'last_order_date' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "orders_count" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'orders_count' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "state" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'state' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "tag" => array(
-                            "type" => "string",
-                            "location" => "json",
+                        'tag' => array(
+                            'type' => 'string',
+                            'location' => 'json',
                         ),
-                        "total_spent" => array(
-                            "type" => "string",
-                            "location" => "json",
-                        )
-                    )
-                )
-            )
+                        'total_spent' => array(
+                            'type' => 'string',
+                            'location' => 'json',
+                        ),
+                    ),
+                ),
+            ),
         ),
 
-
-        /**
+        /*
          *    deleteCustomerSavedSearch() method
          *
          *    reference: http://docs.shopify.com/api/customersavedsearch
          */
-        "deleteCustomerSavedSearch" => array(
-            "httpMethod" => "DELETE",
-            "uri" => "/admin/customer_saved_searches/{id}.json",
-            "summary" => "Delete a customers saved search.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "Unique numeric identifier for the CustomerSavedSearch.",
-                    "required" => true
-                )
-            )
-        )
+        'deleteCustomerSavedSearch' => array(
+            'httpMethod' => 'DELETE',
+            'uri' => '/admin/customer_saved_searches/{id}.json',
+            'summary' => 'Delete a customers saved search.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'Unique numeric identifier for the CustomerSavedSearch.',
+                    'required' => true,
+                ),
+            ),
+        ),
     ),
 
     /*
@@ -242,7 +236,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );

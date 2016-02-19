@@ -12,26 +12,26 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getShop() method
          *
          *    reference: http://docs.shopify.com/api/shop
          */
-        "getShop" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/shop.json",
-            "summary" => "Retrieve Shop",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "fields" => array(
-                    "type" => "string",
-                    "location" => "query",
-                    "description" => "Comma-separated list of fields to include in the response."
-                )
-            )
-        )
+        'getShop' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/shop.json',
+            'summary' => 'Retrieve Shop',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'fields' => array(
+                    'type' => 'string',
+                    'location' => 'query',
+                    'description' => 'Comma-separated list of fields to include in the response.',
+                ),
+            ),
+        ),
     ),
 
     /*
@@ -44,22 +44,22 @@ return array(
     |
     */
 
-    "models" => array(
-        "GetShopOutput" => array(
-            "type" => "array",
-            "items" => array(
-                "type" => "object",
-                "properties" => array(
-                    "name" => array(
-                        "location" => "json",
-                        "type" => "string"
+    'models' => array(
+        'GetShopOutput' => array(
+            'type' => 'array',
+            'items' => array(
+                'type' => 'object',
+                'properties' => array(
+                    'name' => array(
+                        'location' => 'json',
+                        'type' => 'string',
                     ),
-                    "age" => array(
-                        "location" => "json",
-                        "type" => "integer"
-                    )
-                )
-            )
-        )
+                    'age' => array(
+                        'location' => 'json',
+                        'type' => 'integer',
+                    ),
+                ),
+            ),
+        ),
     ),
 );

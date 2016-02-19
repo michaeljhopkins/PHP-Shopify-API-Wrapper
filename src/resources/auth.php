@@ -1,7 +1,8 @@
 <?php
+
 return array(
-	
-	/*
+
+    /*
     |--------------------------------------------------------------------------
     | Operations
     |--------------------------------------------------------------------------
@@ -10,34 +11,34 @@ return array(
     | requests based on their configuration.
     |
     */
-    
-    "operations" => array(
-	    
-        "postAuth" => array(
-            "httpMethod" => "POST",
-            "uri" => "/admin/oauth/access_token",
-            "summary" => "Retrieve Access Token",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "client_id" => array(
-                    "type" => "string",
-                    "location" => "json",
-                    "description" => "The API Key for the app."
+
+    'operations' => array(
+
+        'postAuth' => array(
+            'httpMethod' => 'POST',
+            'uri' => '/admin/oauth/access_token',
+            'summary' => 'Retrieve Access Token',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'client_id' => array(
+                    'type' => 'string',
+                    'location' => 'json',
+                    'description' => 'The API Key for the app.',
                 ),
-                "client_secret" => array(
-                    "type" => "string",
-                    "location" => "json",
-                    "description" => "The Shared Secret for the app."
+                'client_secret' => array(
+                    'type' => 'string',
+                    'location' => 'json',
+                    'description' => 'The Shared Secret for the app.',
                 ),
-                "code" => array(
-                    "type" => "string",
-                    "location" => "json",
-                    "description" => "The authorization code provided in the redirect."
+                'code' => array(
+                    'type' => 'string',
+                    'location' => 'json',
+                    'description' => 'The authorization code provided in the redirect.',
                 ),
             ),
         ),
     ),
-    
+
      /*
     |--------------------------------------------------------------------------
     | Models
@@ -47,8 +48,8 @@ return array(
     | from the operation methods.
     |
     */
-    
-    "models" => array(
-	    
+
+    'models' => array(
+
     ),
 );

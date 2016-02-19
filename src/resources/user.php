@@ -12,41 +12,40 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getUsers() method
          *
          *    reference: http://docs.shopify.com/api/user
          */
-        "getUsers" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/users.json",
-            "summary" => "Get a list of all users.",
-            "responseModel" => "defaultJsonResponse",
+        'getUsers' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/users.json',
+            'summary' => 'Get a list of all users.',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
-        
-        /**
+
+        /*
          *    getUser() method
          *
          *    reference: http://docs.shopify.com/api/user
          */
-        "getUser" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/users/{id}.json",
-            "summary" => "Get a user.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the user.",
-                    "required" => true
-                )
-            )
-        )
-        
+        'getUser' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/users/{id}.json',
+            'summary' => 'Get a user.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the user.',
+                    'required' => true,
+                ),
+            ),
+        ),
+
     ),
 
     /*
@@ -59,7 +58,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );

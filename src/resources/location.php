@@ -12,43 +12,41 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getLocations() method
          *
          *    reference: http://docs.shopify.com/api/location
          */
-        "getLocations" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/locations.json",
-            "summary" => "Get a list of all locations for a shop.",
-            "responseModel" => "defaultJsonResponse",
+        'getLocations' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/locations.json',
+            'summary' => 'Get a list of all locations for a shop.',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
-        
-        /**
+
+        /*
          *    getLocation() method
          *
          *    reference: http://docs.shopify.com/api/location
          */
-        "getLocation" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/locations/{id}.json",
-            "summary" => "Get a single location by its ID.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the location.",
-                    "required" => true
-                )
-            )
+        'getLocation' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/locations/{id}.json',
+            'summary' => 'Get a single location by its ID.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the location.',
+                    'required' => true,
+                ),
+            ),
         ),
-        
+
     ),
-    
 
     /*
     |--------------------------------------------------------------------------
@@ -60,7 +58,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );

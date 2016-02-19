@@ -1,7 +1,8 @@
 <?php
+
 return array(
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Service Name
     |--------------------------------------------------------------------------
@@ -10,7 +11,7 @@ return array(
     |
     */
 
-    "name" => "Shopify",
+    'name' => 'Shopify',
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ return array(
     |
     */
 
-    "description" => "A Shopify API Wrapper built using Guzzle - ShopifyExtras.com",
+    'description' => 'A Shopify API Wrapper built using Guzzle - ShopifyExtras.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -32,45 +33,45 @@ return array(
     |
     */
 
-    "services" => array(
-        "auth",
-        "application-charge",
-        "article",
-        "asset",
-        "blog",
-        "carrier-service",
-        "checkout",
-        "collect",
-        "comment",
-        "country",
-        "custom-collection",
-        "customer",
-        "customer-address",
-        "customer-group",
-        "customer-saved-search",
-        "event",
-        "fulfillment",
-        "fulfillment-service",
-        "location",
-        "metafield",
-        "order",
-        "order-risk",
-        "page",
-        "product",
-        "product-image",
-        "product-variant",
-        "province",
-        "recurring-application-charge",
-        "redirect",
-        "refund",
-        "shop",
-        "script-tag",
-        "smart-collection",
-        "theme",
-        "transaction",
-        "user",
-        "webhook",
-        "shipping-zone"
+    'services' => array(
+        'auth',
+        'application-charge',
+        'article',
+        'asset',
+        'blog',
+        'carrier-service',
+        'checkout',
+        'collect',
+        'comment',
+        'country',
+        'custom-collection',
+        'customer',
+        'customer-address',
+        'customer-group',
+        'customer-saved-search',
+        'event',
+        'fulfillment',
+        'fulfillment-service',
+        'location',
+        'metafield',
+        'order',
+        'order-risk',
+        'page',
+        'product',
+        'product-image',
+        'product-variant',
+        'province',
+        'recurring-application-charge',
+        'redirect',
+        'refund',
+        'shop',
+        'script-tag',
+        'smart-collection',
+        'theme',
+        'transaction',
+        'user',
+        'webhook',
+        'shipping-zone',
     ),
 
     /*
@@ -82,12 +83,12 @@ return array(
     |
     */
 
-    "models" => array(
-        "defaultJsonResponse" => array(
-            "type" => "object",
-            "additionalProperties" => array(
-                "location" => "json",
-            )
-        )
-    )
+    'models' => array(
+        'defaultJsonResponse' => array(
+            'type' => 'object',
+            'additionalProperties' => array(
+                'location' => 'json',
+            ),
+        ),
+    ),
 );

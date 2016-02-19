@@ -12,161 +12,158 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getCollects() method
          *
          *    reference: http://docs.shopify.com/api/collects
          */
-        "getCollects" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/collects.json",
-            "summary" => "Retrieve a list of all Collects",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "page" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "Page to show (default: 1)."
+        'getCollects' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/collects.json',
+            'summary' => 'Retrieve a list of all Collects',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'page' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'Page to show (default: 1).',
                 ),
-                "limit" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "Collects per page (default: 50) (maximum: 250)."
+                'limit' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'Collects per page (default: 50) (maximum: 250).',
                 ),
-                "fields" => array(
-                    "type" => "string",
-                    "location" => "query",
-                    "description" => "Comma-separated list of fields to include in the response."
+                'fields' => array(
+                    'type' => 'string',
+                    'location' => 'query',
+                    'description' => 'Comma-separated list of fields to include in the response.',
                 ),
-                "product_id" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "List only collects for a certain product."
+                'product_id' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'List only collects for a certain product.',
                 ),
-                "collection_id" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "List only collects for a certain collection."
-                )
-            )
+                'collection_id' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'List only collects for a certain collection.',
+                ),
+            ),
         ),
 
-
-        /**
+        /*
          *    getCollectCount() method
          *
          *    reference: http://docs.shopify.com/api/collects
          */
-        "getCollectCount" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/collects/count.json",
-            "summary" => "Retrieve a count of all Collects",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "product_id" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "List only collects for a certain product."
+        'getCollectCount' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/collects/count.json',
+            'summary' => 'Retrieve a count of all Collects',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'product_id' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'List only collects for a certain product.',
                 ),
-                "collection_id" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "List only collects for a certain collection."
-                )
-            )
+                'collection_id' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'List only collects for a certain collection.',
+                ),
+            ),
         ),
 
-
-        /**
+        /*
          *    getCollect() method
          *
          *    reference: http://docs.shopify.com/api/collects
          */
-        "getCollect" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/collects/{id}.json",
-            "summary" => "Retrieve a single Collect",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "string",
-                    "location" => "uri",
-                    "description" => "The ID of the Collect.",
-                    "required" => true
+        'getCollect' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/collects/{id}.json',
+            'summary' => 'Retrieve a single Collect',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'string',
+                    'location' => 'uri',
+                    'description' => 'The ID of the Collect.',
+                    'required' => true,
                 ),
-                "fields" => array(
-                    "type" => "string",
-                    "location" => "query",
-                    "description" => "Comma-separated list of fields to include in the response."
-                )
-            )
+                'fields' => array(
+                    'type' => 'string',
+                    'location' => 'query',
+                    'description' => 'Comma-separated list of fields to include in the response.',
+                ),
+            ),
         ),
 
-        /**
+        /*
          *    createCollect() method
          *
          *    reference: http://docs.shopify.com/api/collect
          */
-        "createCollect" => array(
-            "httpMethod" => "POST",
-            "uri" => "/admin/collects.json",
-            "summary" => "Create a new Collect",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "collect" => array(
-                            "location" => "json",
-                            "parameters" => array(
-                                "product_id" => array(
-                                    "type" => "number",
-                                    "location" => "json",
-                                    "description" => "The product id for this Collect"
+        'createCollect' => array(
+            'httpMethod' => 'POST',
+            'uri' => '/admin/collects.json',
+            'summary' => 'Create a new Collect',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'collect' => array(
+                            'location' => 'json',
+                            'parameters' => array(
+                                'product_id' => array(
+                                    'type' => 'number',
+                                    'location' => 'json',
+                                    'description' => 'The product id for this Collect',
                                 ),
-                                "collection_id" => array(
-                                    "type" => "number",
-                                    "location" => "json",
-                                    "description" => "The collection id for this Collect"
+                                'collection_id' => array(
+                                    'type' => 'number',
+                                    'location' => 'json',
+                                    'description' => 'The collection id for this Collect',
                                 ),
-                                "featured" => array(
-                                    "type" => "boolean",
-                                    "location" => "json",
-                                    "description" => "Whether this is a featured Collect"
+                                'featured' => array(
+                                    'type' => 'boolean',
+                                    'location' => 'json',
+                                    'description' => 'Whether this is a featured Collect',
                                 ),
-                                "position" => array(
-                                    "type" => "number",
-                                    "location" => "json",
-                                    "description" => "The position of this Collect"
+                                'position' => array(
+                                    'type' => 'number',
+                                    'location' => 'json',
+                                    'description' => 'The position of this Collect',
                                 ),
-                                "sort_value" => array(
-                                    "type" => "string",
-                                    "location" => "json",
-                                    "description" => "The sort value of this Collect"
+                                'sort_value' => array(
+                                    'type' => 'string',
+                                    'location' => 'json',
+                                    'description' => 'The sort value of this Collect',
                                 ),
-                           )
-                    )
-            )
+                           ),
+                    ),
+            ),
         ),
 
-
-        /**
+        /*
          *    deleteCollect() method
          *
          *    reference: http://docs.shopify.com/api/page
          */
-        "deleteCollect" => array(
-            "httpMethod" => "DELETE",
-            "uri" => "/admin/collects/{id}.json",
-            "summary" => "Delete a Collect.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "Unique numeric identifier for the Collect.",
-                    "required" => true
-                )
-            )
+        'deleteCollect' => array(
+            'httpMethod' => 'DELETE',
+            'uri' => '/admin/collects/{id}.json',
+            'summary' => 'Delete a Collect.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'Unique numeric identifier for the Collect.',
+                    'required' => true,
+                ),
+            ),
         ),
     ),
 
@@ -180,7 +177,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );

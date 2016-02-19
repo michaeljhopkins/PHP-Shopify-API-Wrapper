@@ -12,38 +12,38 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getRefund() method
          *
          *    reference: http://docs.shopify.com/api/refund
          */
-        "getRefund" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/orders/{order_id}/refunds/{id}.json",
-            "summary" => "Receive a singe refund.",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the refund.",
-                    "required" => true
+        'getRefund' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/orders/{order_id}/refunds/{id}.json',
+            'summary' => 'Receive a singe refund.',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the refund.',
+                    'required' => true,
                 ),
-                "order_id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the order.",
-                    "required" => true
+                'order_id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the order.',
+                    'required' => true,
                 ),
-                "fields" => array(
-                    "type" => "number",
-                    "location" => "query",
-                    "description" => "Comma-separated list of fields to include in the response."
-                )
-            )
-        )
+                'fields' => array(
+                    'type' => 'number',
+                    'location' => 'query',
+                    'description' => 'Comma-separated list of fields to include in the response.',
+                ),
+            ),
+        ),
     ),
 
     /*
@@ -56,7 +56,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );

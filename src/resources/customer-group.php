@@ -12,70 +12,70 @@ return array(
     |
     */
 
-    "operations" => array(
+    'operations' => array(
 
-        /**
+        /*
          *    getCustomerGroups() method
          *
          *    reference: http://docs.shopify.com/api/customergroup
          */
-        "getCustomerGroups" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches.json",
-            "summary" => "Get a list of all customer groups",
-            "responseModel" => "defaultJsonResponse",
+        'getCustomerGroups' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches.json',
+            'summary' => 'Get a list of all customer groups',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
-        /**
+
+        /*
          *    getCustomerGroupCount() method
          *
          *    reference: http://docs.shopify.com/customergroup
          */
-        "getCustomerGroupCount" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/count.json",
-            "summary" => "Get a count of all customer groups",
-            "responseModel" => "defaultJsonResponse"
+        'getCustomerGroupCount' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/count.json',
+            'summary' => 'Get a count of all customer groups',
+            'responseModel' => 'defaultJsonResponse',
         ),
-        
-        /**
+
+        /*
          *    getCustomerGroup() method
          *
          *    reference: http://docs.shopify.com/api/customergroup
          */
-        "getCustomerGroup" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/{id}.json",
-            "summary" => "Retrieve a single Customer Group",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Customer Group.",
-                    "required" => true
-                )
-            )
+        'getCustomerGroup' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/{id}.json',
+            'summary' => 'Retrieve a single Customer Group',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the Customer Group.',
+                    'required' => true,
+                ),
+            ),
         ),
-        
-        /**
+
+        /*
          *    getCustomerGroupCustomers() method
          *
          *    reference: http://docs.shopify.com/api/customergroup
          */
-        "getCustomerGroupCustomers" => array(
-            "httpMethod" => "GET",
-            "uri" => "/admin/customer_saved_searches/{id}/customers.json",
-            "summary" => "Get all customers who match the criteria for the specified customer group",
-            "responseModel" => "defaultJsonResponse",
-            "parameters" => array(
-                "id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the Customer Group.",
-                    "required" => true
-                )
-            )
+        'getCustomerGroupCustomers' => array(
+            'httpMethod' => 'GET',
+            'uri' => '/admin/customer_saved_searches/{id}/customers.json',
+            'summary' => 'Get all customers who match the criteria for the specified customer group',
+            'responseModel' => 'defaultJsonResponse',
+            'parameters' => array(
+                'id' => array(
+                    'type' => 'number',
+                    'location' => 'uri',
+                    'description' => 'The ID of the Customer Group.',
+                    'required' => true,
+                ),
+            ),
         ),
     ),
 
@@ -89,7 +89,7 @@ return array(
     |
     */
 
-    "models" => array(
+    'models' => array(
 
     ),
 );
